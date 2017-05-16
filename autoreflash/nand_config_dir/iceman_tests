@@ -1,0 +1,27 @@
+##############################
+# iceman
+##############################
+#reflash
+reflash
+
+#Turn on
+sm.on
+
+#Stay on when powered off
+#udws "smgr_init.femp 0"
+
+#print 4 tap
+smgr_pe.multi_button_push 4
+
+#print 2 pages of a PCL file
+print FW_Test_PRINT_ver1.1_MainTray.pcl6
+
+# pcl3 not supported 9/22/14
+#print FW_usage_test_PRINT_ver1_1.pcl
+
+#Power cycle Engineers do not want units to test 9/29/14
+sm.off
+sm.on
+
+#report
+report

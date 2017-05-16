@@ -1,0 +1,66 @@
+#		eg. exit
+#
+#	reflash [repo] [target] [build_tag] => First the config_dir/$proj/ directory will be checked for a .fhx files.
+#			If none are found then we will query bkdb for the latest untested build for this project.
+#			You may specify the repository the build must come from, or the specific build_tag that
+#			you would like to download.
+#		eg. reflash sr1_merge.bk flash
+#
+#	prompt [message] => The user will be prompted with 'Continue' or 'Exit', and the appriopate action will be taken.
+#		eg. prompt I have finished printing the photo. Should I continue?
+#
+#	report => If you have downloaded a fhx and requested a test from bkdb, this command will mark the testing as 
+#		finished and open a webbrowser for you to fill details about the completed test.
+#		eg. report
+#######################
+
+# 9/3/2013  Aligned cmds with Scott Lopez, HP SD, for Naples only. - K Krieger
+
+# reflashes unit
+reflash
+
+# turns on unit
+sm.on
+
+# prints 4 tap
+smgr_pe.multi_button_push 4
+#sleep 40
+
+# prints a picture
+
+
+
+# prints berries_plain_normal_4x6.pcl
+#sleep 
+# makes a single color copy
+#sleep 40
+smgr_copy.start 1 1 100 0 1 
+smgr_copy.start 1 0 100 0 1 
+# makes a single black copy
+#sleep 20
+
+# makes 2 color resized contrast-adjusted copies
+
+# prints a picture
+print FW_usage_test_PRINT_ver1_1.pcl
+
+
+
+# prints an epic 5x7 from card
+
+
+## print a 45 tap
+## smgr_pe.multi_button_push 45
+## sleep 40
+
+# turns off unit
+#sm.off
+
+# turns on unit
+sm.on
+
+## prompts
+## prompt Usable test completed. Next step is to download and reflash next available firmware.
+
+#reports test results
+report

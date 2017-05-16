@@ -1,0 +1,22 @@
+#!/bin/sh
+
+cd `dirname $0` > /dev/null
+
+if [ "X$1" == "X" ]
+then
+	echo MUST GIVE DEVICE TO ATTACH TO
+	echo  eg. $0 /dev/ttyS0
+	exit 1
+fi
+
+TMPFILE="./.$$"
+
+echo "set terminal bytesize 8" >> $TMPFILE
+echo "set line $@" >> $TMPFILE
+echo "set flow none" >> $TMPFILE
+echo "set speed 115200" >> $TMPFILE
+echo "set parity none" >> $TMPFILE
+echo "set carrier-watch off" >> $TMPFILE
+
+/usr/bin/kermit -C C -y $TMPFILE  -l $@
+rm -f $TMPFILE

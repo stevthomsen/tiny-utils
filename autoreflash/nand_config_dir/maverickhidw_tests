@@ -1,0 +1,34 @@
+##############################
+# maverickhidw_pkg_lp2
+##############################
+#reflash
+reflash
+
+#Turn on
+sm.on
+
+#Stay on when powered off
+#udws "smgr_init.femp 0"
+
+#print 4 tap
+smgr_pe.multi_button_push 4
+
+smgr_copy.start 1 1 100 0 1
+
+smgr_copy.start 1 0 100 0 1
+
+smgr_copy.start 1 1 50 0 1 0 2 0 0 0 3 +4 1
+
+#print 2 pages of a PCL file
+print FW_Test_PRINT_ver1.1_MainTray.pcl6
+
+#pcl3 not supported 9/22/14
+#print FW_usage_test_PRINT_ver1_1.pcl
+
+#Power cycle Engineers do not want units to test 9/29/14
+sm.off
+sm.on
+
+#report
+report
+

@@ -1,0 +1,6 @@
+maverickdw_pkg_mp1 477dw CN453S441 sox:/dev/ttyUSB12 sol:/dev/ttyUSB11 engine:/dev/ttyUSB10 kernel:/dev/ttyUSB9
+maverickdw_pkg_mp1 477dw CN453S442 sox:/dev/ttyUSB8 sol:/dev/ttyUSB7 engine:/dev/ttyUSB6 kernel:/dev/ttyUSB5
+maverickdw_pkg_mp1 477dw CN453S443 sox:/dev/ttyUSB4 sol:/dev/ttyUSB3 engine:/dev/ttyUSB2 kernel:/dev/ttyUSB1
+icemandw_pkg_mp1 452dw CN453S234 sox:/dev/ttyUSB13 sol:/dev/ttyUSB14 engine:/dev/ttyUSB15 kernel:/dev/ttyUSB16
+icemandw_pkg_mp1 452dw CN453S235 sox:/dev/ttyUSB17 sol:/dev/ttyUSB18 engine:/dev/ttyUSB19 kernel:/dev/ttyUSB20
+icemandw_pkg_mp1 452dw CN453S236 sox:/dev/ttyUSB21 sol:/dev/ttyUSB22 engine:/dev/ttyUSB23 kernel:/dev/ttyUSB24

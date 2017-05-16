@@ -1,0 +1,9 @@
+# these commands are executed after the reflash (if needed)
+# the udws part is added internally, so don't list them here
+#   smgr_pe.multi_button_push 4
+#	will be translated to
+#	udws "smgr_pe.multi_button_push 4"
+sm.fatal_error
+sleep 10
+sm.off
+exit

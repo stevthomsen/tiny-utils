@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd `dirname $0` > /dev/null
+
+if [ ! -e "java_src/Popup.class" ]
+then
+	cd java_src >/dev/null
+	make Popup
+	cd ..
+fi
+
+java -cp java_src Popup $@
+exit $?

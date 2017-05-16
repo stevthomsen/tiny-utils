@@ -1,0 +1,1941 @@
+
+
+
+
+
+
+
+
+
+
+-------- Starting Wed Apr 22 15:46:58 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-22T22:22:14Z
+  - Test Info HW Test ID -> 267077
+   - Successful download of FHX files!
+ - Starting reflash at -- Wed Apr 22 15:47:12 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150422_2222.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150422_2222.fhx (77680318 bytes) to /dev/usb/lp11 ..................................................
++-+++--++++--+++-+--+++++++---+++++++-++--+------------+-++++---+--+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150422_2222.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Wed Apr 22 15:51:31 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++-------+----+---+-+++++))+--------+------++-----+-------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++----------+----++------++-----+)-+-------++-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---++--+++----+)+--+------++----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp11 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------+++--------------------------+-++)(|)(|))+----------+----+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++++++++--++++-+++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+
+
+
+
+
+
+
+
+
+
+-------- Starting Thu Apr 23 08:04:46 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T19:27:16+05:30
+  - Test Info HW Test ID -> 267361
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 08:04:59 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1927.fhx
++----
+++-+++
+- Sending edwin_pkg_lp1_20150423_1927.fhx (77680271 bytes) to /dev/usb/lp5 ..................................................
++-++++++-++------+
+*************
+- Error while waiting for reflash. Output: *** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+  Will continue to try to wake up unit
+*************
+
+***************************
+ASSERT ON REFLASH!
+CMD: udw.srec_download
+ASSERT INFO: 
+*** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+***************************
+
+ - Now attempting assert recovery
+***
+ COULD NOT FIND NAME: 'coredump' with serial number 'CN53115104' on USB ports
+***
+ERROR: Coredump device not found on USB!
+Cannot continue!
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1927.old_fhx
+- Sirius Hub successfully updated.
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart script when unit is ready to be tested again.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Thu Apr 23 08:58:27 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T08:45:34-07:00
+  - Test Info HW Test ID -> 267374
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 09:08:42 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_0845.fhx
++----
++-++++
+- Sending edwin_pkg_lp1_20150423_0845.fhx (77680271 bytes) to /dev/usb/lp9 ..................................................
++++++--++++--++++---+++++++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_0845.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 09:12:38 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++---------+
+
+***************************
+ASSERT!
+CMD: udws "sm.on"
+ASSERT INFO: 
+*** ASSERT: 0x00000000
+*** type of assert: LINE & FCRC
+*** file: sol:SIGSEGV
+*** seconds since 1970: 0x55391a3f
+*** ASSERT: 0x00000000
+
+***************************
+
+ - Final calculated coredump location: http://lnxpefcrat.vcd.hp.com:8080/edwin_pkg_lp1/2015-04-23T08:45:34-07:00/20150423-091338-edwin_pkg_lp1-CN53115104-sol-asserted.core.gz
+- Sirius Hub successfully updated.
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart the script when the issue has been resolved.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Thu Apr 23 14:02:58 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T13:20:52-07:00
+  - Test Info HW Test ID -> 267438
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 14:03:12 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1320.fhx
++----
++-++++
+- Sending edwin_pkg_lp1_20150423_1320.fhx (77680271 bytes) to /dev/usb/lp11 ..................................................
++-+++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1320.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 14:07:09 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp11 now on /dev/usb/lp9
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--+++++-+++-----------+---+++++++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++----------+--+-++-+++))---------+-----++----+++------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++----------+----++------++-----+)---+-----++-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++----------+----++-+++-----+)---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp9 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|------+++---------------------------++++)(|)(|))---------+------+-----+-+-----
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++--++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T13:45:43-07:00
+  - Test Info HW Test ID -> 267447
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 14:17:03 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1345.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150423_1345.fhx (77680271 bytes) to /dev/usb/lp11 ..................................................
++-+++--++++--++++---+++-+++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1345.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 14:20:58 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++--+--+++++)+)--------+------+-----------+--
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----+++--+--+++-----+)---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++-+++-----+)---+-----+-----+--+-----------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp9 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------+++---------------------------+++)(|)(+|))----------+----++----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++-+++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++++----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T14:09:04-07:00
+  - Test Info HW Test ID -> 267452
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 14:35:19 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1409.fhx
++----
+++-+++
+- Sending edwin_pkg_lp1_20150423_1409.fhx (77680271 bytes) to /dev/usb/lp9 ..................................................
++-+++--++++--++++---+++-+++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1409.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 14:39:13 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++---+--+++++))--------+------+-----+-+------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++------++-----+)---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++-----+)---+-----+-----------+----+---
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp9 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------++++--------------------------+++)(+|)(|))---------+------++----+-------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++--++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++++----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T14:43:14-07:00
+  - Test Info HW Test ID -> 267463
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 15:08:42 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1443.fhx
++----
+++-+++
+- Sending edwin_pkg_lp1_20150423_1443.fhx (77680271 bytes) to /dev/usb/lp7 ..................................................
++-+++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1443.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 15:12:42 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp9 now on /dev/usb/lp7
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++----+-+-----------------------------
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Waiting for unit to reach IDLE state
+------------------------------
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+ - Waiting for unit to reach IDLE state
+++--+--------++-----------------------++-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++---+----+-+--+-++-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++++---------+---+++------++-----+)---+-----++----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++-----+)---+--+--++----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp7 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------++++--------------------------+++)(|)(+|))---------+----++----++--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++--++++-+++++---+++-+++---------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++-+++++++++-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-23T15:39:59-07:00
+  - Test Info HW Test ID -> 267477
+   - Successful download of FHX files!
+ - Starting reflash at -- Thu Apr 23 16:11:19 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150423_1539.fhx
+-----
++++++
+WARNING: Assert during shutdown to reflash!
+*** ASSERT: 0x029769ea
+*** type of assert: LINE & FCRC
+*** line: 663
+*** file: sol:pe_query_proxy_pe_query_client.c
+*** seconds since 1970: 0x55397c38
+
+- Sending edwin_pkg_lp1_20150423_1539.fhx (77541155 bytes) to /dev/usb/lp3 ..................................................
++++++--++++-+++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150423_1539.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Thu Apr 23 16:15:10 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp7 now on /dev/usb/lp3
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++-++++++--------+
+
+***************************
+ASSERT!
+CMD: udws "sm.on"
+ASSERT INFO: 
+*** ASSERT: 0x04d12669
+*** type of assert: LINE & FCRC
+*** line: 1233
+*** file: sol:jm_fax_print_pe.c
+*** seconds since 1970: 0x55397d49
+*** ASSERT: 0x04d12669
+
+***************************
+
+ - Final calculated coredump location: http://lnxpefcrat.vcd.hp.com:8080/edwin_pkg_lp1/2015-04-23T15:39:59-07:00/20150423-161611-edwin_pkg_lp1-CN53115104-sol-asserted.core.gz
+- Sirius Hub successfully updated.
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart the script when the issue has been resolved.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Fri Apr 24 08:44:48 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T08:00:47-07:00
+  - Test Info HW Test ID -> 267660
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 08:45:01 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_0800.fhx
+-----
++++++
+WARNING: Assert during shutdown to reflash!
+*** ASSERT: 0x029769ea
+*** type of assert: LINE & FCRC
+*** line: 663
+*** file: sol:pe_query_proxy_pe_query_client.c
+*** seconds since 1970: 0x553a651f
+
+- Sending edwin_pkg_lp1_20150424_0800.fhx (77677263 bytes) to /dev/usb/lp11 ..................................................
++-+++--++++--+++-+--++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_0800.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 08:48:58 2015 --
+WARNING: The reported revision string and build times did not change!
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++++----------------+--++++---+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|++++++---------+--+--+-+++))---------+------+----------++-
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++---+++------++-----+)--+-------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++-----+)--+------+-----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp11 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------++++--------------------------++++)(|)(|))----------+----++----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++++++++--++++-+++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T08:24:05-07:00
+  - Test Info HW Test ID -> 267670
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 08:58:29 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_0824.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150424_0824.fhx (77677263 bytes) to /dev/usb/lp11 ..................................................
++++++--++++--++++---+++-+++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_0824.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 09:02:24 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++--+--+++++)+)--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----+++-----+++-----+)---+-----++----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++-++++----+)---+------+-----------+----+--
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp11 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------+++---------------------------+++)(|)(+|))--------+------++----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-++++++++-++------+
+
+***************************
+ASSERT!
+CMD: udws "sm.off"
+ASSERT INFO: 
+*** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+***************************
+
+***
+ COULD NOT FIND NAME: 'coredump' with serial number 'CN53115104' on USB ports
+***
+ERROR: Coredump device not found on USB!
+Cannot continue!
+- Sirius Hub successfully updated.
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart the script when the unit is ready to be tested again.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Fri Apr 24 09:16:13 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T08:49:41-07:00
+  - Test Info HW Test ID -> 267672
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 09:16:26 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_0849.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150424_0849.fhx (77677263 bytes) to /dev/usb/lp11 ..................................................
++++++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_0849.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 09:20:20 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++++----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++---+-++-+++))--------+-+----+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++---+++-----+++-----+)---+-----+-----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++-----+)---+-----+-----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp11 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-+-----+++---------------------------+++)(+|)(|))--------+------++-----------+-
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++--++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T17:02:16Z
+  - Test Info HW Test ID -> 267689
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 10:29:44 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1702.fhx
++----
++-++++
+- Sending edwin_pkg_lp1_20150424_1702.fhx (77677263 bytes) to /dev/usb/lp11 ..................................................
++-+++--++++--++++---+++++++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1702.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 10:33:41 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++-+---+--+-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++------++-----+)+-++-------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---++--+++-----+)----+-----+-----+--+----------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp11 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-+--+--++-+---------------------------++++)(|)(|))--+-----+------++----++-------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++--++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T10:27:50-07:00
+  - Test Info HW Test ID -> 267692
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 10:53:06 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1027.fhx
++----
++-++++
+- Sending edwin_pkg_lp1_20150424_1027.fhx (77677263 bytes) to /dev/usb/lp10 ..................................................
++-+++--++++--++++---+++-+++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1027.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 10:57:06 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp11 now on /dev/usb/lp0
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++---+--+-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++------++-----+)----+-----+-----+-----+----+--
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++----+)+---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp0 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|------+++---------------------------+++)(+|)(|))---------+----++----++--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---+++--++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T10:53:32-07:00
+  - Test Info HW Test ID -> 267711
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 11:21:29 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1053.fhx
++----
++-++++
+- Sending edwin_pkg_lp1_20150424_1053.fhx (77677263 bytes) to /dev/usb/lp1 ..................................................
++++++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1053.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 11:25:23 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp0 now on /dev/usb/lp1
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++++----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++-+---+-++-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++---+++-----++++----+)---+-----+-----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---++--+++-----+)----+-----+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp1 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|+------+++---------------------------+++)(|)(+|))---------+------++-----------+
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
+++++++++++--+++--+++-+--+++++++---------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T11:17:00-07:00
+  - Test Info HW Test ID -> 267716
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 11:39:46 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1117.fhx
++----
+++++++
+- Sending edwin_pkg_lp1_20150424_1117.fhx (77677263 bytes) to /dev/usb/lp1 ..................................................
++-+++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1117.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 11:43:41 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++-+++++++-+-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++---+--+-+++))--------+-----++-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++------++-----+)--+--------+-----+------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---++-++++-----+)---+-----+-----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp1 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------+++---------------------------+++)(|)(+|))---------+------+-----+-------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
+++---------+
+
+***************************
+ASSERT!
+CMD: udws "sm.off"
+ASSERT INFO: 
+*** ASSERT: 0x0228e4f5
+*** type of assert: LINE & FCRC
+*** line: 552
+*** file: sol:smgr_init.c
+*** seconds since 1970: 0x553a9066
+*** ASSERT: 0x0228e4f5
+
+***************************
+
+ - Final calculated coredump location: http://lnxpefcrat.vcd.hp.com:8080/edwin_pkg_lp1/2015-04-24T11:17:00-07:00/20150424-115000-edwin_pkg_lp1-CN53115104-sol-asserted.core.gz
+- Sirius Hub successfully updated.
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart the script when the issue has been resolved.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Fri Apr 24 13:01:52 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T12:34:38-07:00
+  - Test Info HW Test ID -> 267734
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 13:02:05 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1234.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150424_1234.fhx (77677263 bytes) to /dev/usb/lp1 ..................................................
++-+++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1234.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 13:06:05 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++---+--+-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++-+----++-----+)----+-----+-----------+---++--
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++----+)+---+-----++----+--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp1 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-------+++----------------+----------+++)(+|)(|))----------+----++----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-++++++++-++------+
+
+***************************
+ASSERT!
+CMD: udws "sm.off"
+ASSERT INFO: 
+*** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+***************************
+
+***
+ COULD NOT FIND NAME: 'coredump' with serial number 'CN53115104' on USB ports
+***
+ERROR: Coredump device not found on USB!
+Cannot continue!
+- Sirius Hub successfully updated.
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************
+
+Please restart the script when the unit is ready to be tested again.
+Bye!
+
+
+
+
+
+
+
+
+
+
+-------- Starting Fri Apr 24 13:36:57 2015 ---------
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T13:09:25-07:00
+  - Test Info HW Test ID -> 267749
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 13:37:10 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1309.fhx
+-----
+++-++++
+- Sending edwin_pkg_lp1_20150424_1309.fhx (77677263 bytes) to /dev/usb/lp4 ..................................................
++-+++--++++--++++---++++++----------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1309.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 13:41:07 2015 --
+***************************
+
+***************************
+The device has switched USB ports. Used to be on /dev/usb/lp4 now on /dev/usb/lp0
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++++-+-+--+-+++))--------+-----++-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(-++++----++------++-----+)--++-------+-----+------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---++--+++-----+)---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp0 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|-+-----+++--------------------------++++)(|)(|))+---------+----++----------+---
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++--++++-+++++---++++++----------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++-+++++++++-+----------------+-++++---+--+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T13:32:59-07:00
+  - Test Info HW Test ID -> 267759
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 14:00:30 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_1332.fhx
++----
+++++++
+- Sending edwin_pkg_lp1_20150424_1332.fhx (77677263 bytes) to /dev/usb/lp0 ..................................................
++++++--+++++-+++-+--+++++++---------------+-----------------------------------------------------------
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_1332.old_fhx
+***************************
+edwin_pkg_lp1 HAS BEEN REFLASHED -- Fri Apr 24 14:04:22 2015 --
+***************************
+
+ - Waiting for unit to reach IDLE state
+------------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++-+-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: smgr_pe.multi_button_push 4
+ - Waiting for unit to reach IDLE state
+(+|(|+++++-+---+-++-+++))--------+------+-----+--------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 16 : IDLE
+      UNKNOWN 32 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 1 100 0 1
+ - Waiting for unit to reach IDLE state
+(+++++---+++-----+++-----+)---+-----+----++--------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 48 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: smgr_copy.start 1 0 100 0 1
+ - Waiting for unit to reach IDLE state
+(++++----++--+++-----+)---+------+-----+-------------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 64 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: print FW_usage_test_PRINT_ver1_1.pcl
+- Sending FW_usage_test_PRINT_ver1_1.pcl (357333 bytes) to /dev/usb/lp0 ......................
+ - Waiting for unit to reach IDLE state
+(+|(|------++++--------------------------+++)+(|)(|))---------+----++----+---------
+  - FOLLOWING JOBS HAVE COMPLETED:
+      UNKNOWN 128 : IDLE
+      UNKNOWN 112 : IDLE
+      UNKNOWN 80 : IDLE
+      UNKNOWN 96 : IDLE
+
+ - Successful!
+
+- CURRENT COMMAND: sm.off
+ - Waiting for unit to reach IDLE state
++++-+++++---++++-+++-+--+++++++---------------+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: sm.on
+ - Waiting for unit to reach IDLE state
++--++++++++-+----------------+-++++----+-+-----------------------------
+ - Successful!
+
+- CURRENT COMMAND: report
+- Sirius Hub successfully updated.
+
+ - Successful!
+
+***************************
+ Testing cycle done. Sleeping for 30 seconds
+***************************
+
+
+- Warning, no valid photos found on a photo card
+
+- CURRENT COMMAND: reflash
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - Nothing to download. Sleeping for 5 minutes then trying again
+ - No .fhx file found in directory.
+   Connecting to Sirius Hub to find latest untested build
+  - For product = edwin_pkg_lp1
+  - Beginning database query
+   - New package found!
+  - Beginning FHX download
+    - ..................................................
+ ** YOU HAVE REQUESTED THIS TEST: **
+  - Test Info Product    -> edwin_pkg_lp1
+  - Test Info Build Time -> 2015-04-24T20:58:11Z
+  - Test Info HW Test ID -> 267768
+   - Successful download of FHX files!
+ - Starting reflash at -- Fri Apr 24 14:23:44 2015 -- for edwin_pkg_lp1 with file: edwin_pkg_lp1_20150424_2058.fhx
++----
+++-+++
+- Sending edwin_pkg_lp1_20150424_2058.fhx (77677263 bytes) to /dev/usb/lp11 ..................................................
++-++++++-++------+
+*************
+- Error while waiting for reflash. Output: *** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+  Will continue to try to wake up unit
+*************
+
+***************************
+ASSERT ON REFLASH!
+CMD: udw.srec_download
+ASSERT INFO: 
+*** ASSERT: 0x001c3d94
+*** type of assert: LINE & FCRC
+*** line: 28
+*** file: SX-lib_smartdev_xpt_i2c.c
+*** ASSERT: 0x001c3d94
+
+***************************
+
+ - Now attempting assert recovery
+***
+ COULD NOT FIND NAME: 'coredump' with serial number 'CN53115104' on USB ports
+***
+ERROR: Coredump device not found on USB!
+Cannot continue!
+Moving FHX to new location: ./config_dir/edwin_pkg_lp1/edwin_pkg_lp1_20150424_2058.old_fhx
+- Sirius Hub successfully updated.
+
+***************************
+***************************
+Please see pop-up message for prompt
+***************************
+***************************

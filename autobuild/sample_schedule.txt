@@ -1,0 +1,34 @@
+<b>Tentative Weekly Release Schedule</b>
+<ul>
+    <li>Limo</li>
+    <ul>
+        <li>Release <i>TWO</i> times each week:</li>
+        <ul>
+            <li>Branch and build Tuesday nights, this is the first release of
+            the week, and will use the previous week's engine and finisher
+
+            <li>Branch and build Thursday nights will include the engine and
+            finisher</li>
+
+            <li>Branch and build Thursday nights; this branch will include the
+            engine and finisher, and is the <i>major</i> branch of the week,
+            intending to release the following Tuesday. If we are still blocked
+            on Tuesday, stabilization will continue on this branch through Thursday,
+            preempting the Tuesday branch.</li>
+
+            <li>Branch and build Tuesday nights; this branch will use the previous
+            week's engine and finisher. It will occur only if the previous Thursday
+            branch was released successfully.</li>
+        </ul>
+        <li>Two day release cycle goal</li>
+        <li>At latest release by end of day Tuesday and Thursday (barring any
+            unforeseen circumstances - i.e., blocking issues).</li>
+    </ul>
+    <li>Bugatti</li>
+    <ul>
+        <li>Branch Thursday night</li>
+        <li>Two day release cycle goal.</li>
+        <li>At latest release by end of day the following Thursday (barring any
+        unforseen circumstances - i.e., blocking issues</li>
+    </ul>
+</ul>

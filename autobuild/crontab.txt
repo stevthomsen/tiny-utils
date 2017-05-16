@@ -1,0 +1,22 @@
+#
+# The branches need to be done as close together as feasible
+#
+# The builds need to be spaced out so that we don't overwhelm the systems/network
+#
+
+# Limo branch #1 - Tu
+30 17 * * 2	sh -l /work/bin/branch limo 1 > /work/logs/cron_branch.log 2>&1
+35 17 * * 2	sh -l /work/bin/build limo 1 > /work/logs/cron_build.log 2>&1
+
+# Limo branch #2 - Th
+30 17 * * 4	sh -l /work/bin/branch limo 2 > /work/logs/cron_branch.log 2>&1
+35 17 * * 4	sh -l /work/bin/build limo 2 > /work/logs/cron_build.log 2>&1
+
+# Bugatti branch - Th
+30 17 * * 2	sh -l /work/bin/branch bugatti_3_0 > /work/logs/cron_branch.log 2>&1
+55 17 * * 2	sh -l /work/bin/build bugatti_3_0 > /work/logs/cron_build.log 2>&1
+
+
+# Manual test run
+#00 14 08 06 *   sh -l /work/bin/branch -debug -debug_email limo 0 > /work/logs/cron_branch.log 2>&1
+#51 16 07 06 *  sh -l /work/bin/build -debug limo 2 > /work/logs/cron_build.log 2>&1

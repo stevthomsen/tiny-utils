@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cd `dirname $0` 
+
+if [ ! -e "java_src/Manager.class" ]
+then
+	cd java_src >/dev/null
+	make Manager
+	cd ..
+fi
+
+java -cp java_src Manager

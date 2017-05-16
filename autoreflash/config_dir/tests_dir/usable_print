@@ -1,0 +1,55 @@
+#######################
+# Start at a usable test
+# KEYWORDS:
+#	sleep <number> => Will send the process to sleep for <number> of seconds
+#		eg. sleep 30
+#
+#	print <file> => Because there is no udw way to print a file, we must print using 'cat'.
+#			The script will expect picture files to be in the ./config_dir/pictures_dir/<name>.
+#		eg. print berries_plain_normal_4x6.pcl
+#
+#	exit => The process will die and the testing will stop
+#		eg. exit
+#
+#	reflash [repo] [target] [build_tag] => First the config_dir/$proj/ directory will be checked for a .fhx files.
+#			If none are found then we will query bkdb for the latest untested build for this project.
+#			You may specify the repository the build must come from, or the specific build_tag that
+#			you would like to download.
+#		eg. reflash sr1_merge.bk flash
+#
+#	prompt [message] => The user will be prompted with 'Continue' or 'Exit', and the appriopate action will be taken.
+#		eg. prompt I have finished printing the photo. Should I continue?
+#
+#	report => If you have downloaded a fhx and requested a test from bkdb, this command will mark the testing as 
+#		finished and open a webbrowser for you to fill details about the completed test.
+#		eg. report
+#######################
+
+#print 4 tap
+smgr_pe.multi_button_push 4
+sleep 20
+
+#print a picture
+print berries_plain_normal_4x6.pcl
+sleep 20
+
+#make a single black copy
+smgr_copy.start 1 0
+sleep 20
+
+#make a single color copy
+smgr_copy.start 1 1
+sleep 20
+
+#print a 45 tap
+smgr_pe.multi_button_push 45
+sleep 20
+
+#report
+report
+
+#prompt
+prompt Usable test completed. Next step is to download and reflash next available firmware.
+
+#reflash
+reflash

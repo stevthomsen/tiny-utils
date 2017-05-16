@@ -1,0 +1,12 @@
+ruby_lp2 /dev/ttyUSB23
+maverickdw_pkg_mp1 /dev/ttyUSB12
+muscatel_lp2 /dev/ttyUSB20
+weber_base_lp3 /dev/ttyUSB22
+naples_minus_mp2 /dev/ttyUSB1
+shaolin_wl_mp2 /dev/ttyUSB3
+wudang_aio_ia_mp1 /dev/ttyUSB2
+corfuplus_mp1 /dev/ttyUSB0
+icemandw_pkg_mp1 /dev/ttyUSB4
+icemanhidw_ofax_pkg_lp1 /dev/ttyUSB8
+weberpdl_pkg_lp2 /dev/ttyUSB24
+edwin_pkg_lp1 /dev/ttyUSB16

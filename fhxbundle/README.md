@@ -1,0 +1,1 @@
+Very basic script to bundle specified engine and cp hex files into a single fhx file for loading. This version is focused on combining engine and cp images. In the future, other bundlings will also be supported.

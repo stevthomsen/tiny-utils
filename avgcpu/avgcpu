@@ -1,0 +1,129 @@
+#!/bin/sh
+# busybox compliant
+author="ktang@hp.com"
+version="0.0.1"
+
+msg(){
+    local format=$1
+    shift
+    [ $verbosity -gt 0 ] && printf "$format" $@
+}
+
+msg1(){
+    local format=$1
+    shift
+    [ $verbosity -gt 1 ] && printf "$format" $@
+}
+
+calc_cpu_avg(){
+    local samples="$1"
+    local naptime="$2"
+    local sum_usage=0
+
+    local pIdle=0
+    local pTotal=0
+
+    for iteration in $(seq 0 ${samples}) ; do
+        local cIdle=0
+        local cTotal=0
+        local stats=
+        # fetch cpu information
+        stats=$(head -n 1 /proc/stat | tr -s ' ' '+')
+        numstats=$(echo "${stats}" | tr '+' ' ' | wc -w)
+        # sanity check the args
+        if [ ${numstats} -lt 10 ] ; then
+            return 1
+        fi
+
+        # /proc/stat positions
+        #   1    2    3    4   5     6     7     8      9    10      11
+        # label user nice sys idle iowait irq softirq steal guest guestnice
+        cIdle=$(( $(echo "${stats}" | cut -f5-6 -d'+') ))
+        cTotal=$(( $(echo "${stats}" | cut -f2- -d'+') ))
+
+        if [ "$pTotal" -gt 0 ] && [ "$pIdle" -gt 0 ] ; then
+            idle=$(( cIdle - pIdle ))
+            total=$(( cTotal - pTotal ))
+            usage=$(awk "BEGIN { print ((${total}-${idle})/${total}*100) }")
+            msg1 "sampled usage: ${usage}%%\n"
+            sum_usage=$(awk "BEGIN { print ${usage}+${sum_usage} }")
+        fi
+
+        pIdle=${cIdle}
+        pTotal=${cTotal}
+        sleep "${naptime}"
+    done
+
+    adjiter=$iteration
+    if [ -z $iteration ] || [ $iteration -eq 0 ]; then
+        adjiter=1
+    fi
+    avg=$(awk "BEGIN { printf \"%.2f\", ( ${sum_usage}/${adjiter} ) }")
+    timed=$(awk "BEGIN { printf \"%.2f\", ( ${naptime}*${iteration} ) }")
+    msg "\nSamples: %s\nSeconds: %.2f\n\n" "${iteration}" "${timed}" 
+    msg "Average CPU usage: "
+    printf "%s%%\n" "${avg}"
+    msg "\n"
+    return 0
+}
+
+usage(){
+    echo "$0 [options]"
+    echo
+    echo " options:"
+    echo "    --quiet     | -q     output only the average %CPU usage"
+    echo "    --version   | -v     output the program version"
+    echo "    --verbose   | -x     output sampling point"
+    echo
+    echo "    --samples N | -s N   calculate %CPU usage over N samples"
+    echo "    --wait X    | -w X   sleep X seconds between samples"
+    echo
+    echo " contact: ${author}"
+    echo
+}
+
+abs(){
+    awk "BEGIN { print sqrt($1*$1) }"
+}
+
+samples=10
+naptime=1
+verbosity=1
+
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        -s|--samples)
+            shift
+            samples=$(abs $1)
+            shift
+            ;;
+        -w|--wait)
+            shift
+            naptime=$(abs $1)
+            shift
+            ;;
+        -q|--quiet)
+            shift
+            verbosity=0
+            ;;
+        -x|--verbose)
+            shift
+            verbosity=2
+            ;;
+        -v|--version)
+            echo "version ${version}"
+            exit 0
+            ;;
+        *) 
+            usage
+            exit 0
+            ;;
+    esac
+done
+
+calc_cpu_avg "${samples}" "${naptime}"
+ret=$?
+if [ "${ret}" -ne 0 ]; then
+    msg "failed to read cpu statistics."
+fi
+exit "$ret"

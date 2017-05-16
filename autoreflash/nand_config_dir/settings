@@ -1,0 +1,108 @@
+###################################################
+# TEST_FILE_ATTEMPTS - If you can't find the testsfile.. 
+#  how many times to sleep and try again.. If you just 
+#  want to reflash units, then set this to 0. If you want 
+#  to keep sleep looping, set to -1.
+TEST_FILE_ATTEMPTS 2
+###################################################
+
+###################################################
+# QUIT_AFTER_ERROR - If you encounter an error in an udw 
+#  command (eg. get a 'command not found message' or you see 
+#  'udws() returns 1') should the process stop fo that printer? 
+#  Set to 1 to quit when you see an error, 0 to continue.
+QUIT_AFTER_ERROR 0
+###################################################
+
+###################################################
+# ATTEMPT_FHX_DOWNLOAD - Should I connect to Sirius Hub to 
+#  find/download/request new fhx files?
+ATTEMPT_FHX_DOWNLOAD 1
+###################################################
+
+###################################################
+# REMOVE_FHX AFTER RELFASH - After the reflash has completed 
+#  successfully we either can remove the .FHX file or we can 
+#  move it to <prev_name>.old_fhx. If the variable is > 0
+#  then that many .fhx or .old_fhx will be left around 
+#  (sorted by modify time)
+REMOVE_FHX_AFTER_REFLASH 3
+###################################################
+
+###################################################
+# USB_WAIT_TIMEOUT - This is how long we will wait after the 
+#  'cat [picture] > [usb]' before assuming that the printer had an 
+#  error and killing the cat process.
+USB_WAIT_TIMEOUT 500
+###################################################
+
+###################################################
+# WAIT_TIME - How long should we wait with no output
+#  before the serial line is considered clean (seconds).
+WAIT_TIME 30
+###################################################
+
+###################################################
+# WAIT_AFTER_CMD - Should we perform a wait command (wait until 
+#  the serial has no output for x seconds) before I continue to 
+#  the next command?
+WAIT_AFTER_CMD 1
+###################################################
+
+###################################################
+# ALWAYS_SAFE_REFLASH - After an assert we can try 
+#  to reflash with known good code (located in the 
+#  config_dir/$projext/$project.keep)
+ALWAYS_SAFE_REFLASH 0
+###################################################
+
+###################################################
+# SERVER_PATH - This is the path to the local webserver.
+#  if this is defined, the coredump files will be 
+#  placed in this directory and the path will be 
+#  recorded in the comments.
+#  By default ./coredump_dir will be assumed for the 
+#  path. and the hostname will be used for the
+#  server address
+#  eg. SERVER http://hpsd2809.dhcp.sdd.hp.com:8000/
+#  eg. SERVER_PATH /home/bkdb/autoreflash/coredump_dir
+SERVER http://lnxpefcrat.vcd.hp.com:8080/
+SERVER_PATH /home/bkdb/autoreflash_sh/coredump_dir
+###################################################
+
+###################################################
+# JOB_FILTERS - This is a list of job SUIDs that
+#  will be filtered from job_tracking. This is just
+#  in case there are TEMP_AGENCY jobs or others
+
+#  that run continuously and will never let serial
+#  be quiet.
+#  List multiple SUIDs by separating with a space
+#  (e.g. 2304 2305 2306)
+JOB_FILTERS 2304
+###################################################
+
+###################################################
+# COMMANDS - Shortcuts for the commands.
+#  if the 1st word is seen it will be substituted for the 
+#  rest of the line
+#  eg. 'copy_color' will go to "smgr_copy.start 1 1"
+COMMAND tap smgr_pe.multi_button_push
+COMMAND copy smgr_copy.start 
+COMMAND copy_color smgr_copy.start 1 1
+COMMAND copy_black smgr_copy.start 1 0
+COMMAND turn_off sm.off
+COMMAND turn_on sm.on
+COMMAND photo_card_print jm_ph_prt.photo_job 1 1 0 
+COMMAND photo_card_print_4x6 jm_ph_prt.photo_job 1 1 0 s4x6
+COMMAND photo_card_print_8x11 jm_ph_prt.photo_job 1 1 0 s8x11
+COMMAND photo_card_print_from_tray jm_ph_prt.photo_tray_job 1 1 0
+COMMAND photo_card_print_from_tray_3x5 jm_ph_prt.photo_tray_job 1 1 0 s3x5
+COMMAND photo_card_print_from_tray_4x6 jm_ph_prt.photo_tray_job 1 1 0 s4x6
+
+#BUTTONS
+COMMAND button ui.send_button_name
+COMMAND button_black_copy ui.send_button_name \"Black Start Copy\"
+COMMAND button_color_copy ui.send_button_name \"Color Start Copy\"
+COMMAND button_power ui.send_button_name \"Power\"
+###################################################
